@@ -1,0 +1,17 @@
+div {
+  margin-left: auto;
+  margin-top: 1em;
+  cursor: pointer;
+}
+
+body{
+  margin: 0 auto;
+}
+
+footer {
+  padding: 3rem;
+  text-align: center;
+  font-size: 0.8 rem;
+  font-weight: bold;
+}
+  

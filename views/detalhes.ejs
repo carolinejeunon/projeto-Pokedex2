@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/detalhes.css">
+    <title>Detalhes</title>
+</head>
+<body>
+    <section id="topbar">
+        <h1 id="titulo">Pokedex</h1>
+
+            <li><a id="btnHome" href="/">Voltar para a página principal</a></li>
+            <li><a id="btnCadastro" href="/cadastro">Cadastrar novo pokemon</a></li>
+    </section>
+
+        <div>
+        <h1>
+            <%= pokemon.nome %><span> N° <%=pokemon.number %> </span>
+        </h1>
+        </div>
+    
+
+    <section id="detalhes">
+        <img src="<%= pokemon.imagem %>">
+            <div >
+                <h3>Descrição:</h3>
+            <p>
+                <%= pokemon.descricao %>
+            </p>
+            <div>
+                <div>
+                    <h3>Altura:</h3>
+                    <p>
+                        <%= pokemon.altura %>
+                    </p>
+                    <h3>Peso:</h3>
+                    <p>
+                        <%= pokemon.peso %>
+                    <p>
+                </div>
+                <div>
+                    <h3>Categoria:</h3>
+                    <p>
+                        <%= pokemon.categoria %>
+                    </p>
+                    <h3>Habilidade:</h3>
+                    <p>
+                        <%= pokemon.habilidade %>
+                    </p>
+                </div>
+            </div>
+            <h3>Tipo:</h3>
+            <p>
+                <%= pokemon.tipo %>
+            </p>
+        </div>
+
+
+    </section>
+
+    <script src="/js/script.js"></script>
+</body>
+</html>

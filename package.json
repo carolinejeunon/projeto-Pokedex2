@@ -1,0 +1,27 @@
+{
+  "name": "projeto-pokedex2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index",
+    "dev": "nodemon index"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/carolinejeunon/projeto-Pokedex2.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/carolinejeunon/projeto-Pokedex2/issues"
+  },
+  "homepage": "https://github.com/carolinejeunon/projeto-Pokedex2#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.13"
+  },
+  "dependencies": {
+    "ejs": "^3.1.6",
+    "express": "^4.17.1"
+  }
+}
