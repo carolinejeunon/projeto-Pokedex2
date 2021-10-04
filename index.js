@@ -13,7 +13,7 @@ const pokedex = [{
     number:007, 
     nome: 'Squirtle', 
     tipo: 'Water', 
-    imagem: src='img/squirtle.png', 
+    imagem: 'img/squirtle.png', 
     descricao: 'When it retracts its long neck into its shell, it squirts out water with vigorous force.', 
     altura: '0.5m', 
     peso: '9.0 kg', 
@@ -57,13 +57,6 @@ app.get("/cadastro", (req, res) => {
   res.render("cadastro");
 });
 
-/*app.post("/new", (req, res) => {
-  console.log(req.body);
-  const {number, nome, tipo, image, descricao, altura, peso, categoria, habilidade} = req.body;
-  pokedex.push({number: number, nome: nome, tipo: tipo, imagem: image, descricao: descricao, altura: altura, peso: peso, categoria: categoria, habilidade: habilidade});
-  message = "Pokemon adicionado! :)";
-  res.redirect("/");
-});*/
 
 app.post("/new", (req, res) => {
   const {nome, tipo, imagem, descricao, altura, peso, categoria, habilidade} = req.body;

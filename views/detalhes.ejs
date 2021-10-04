@@ -9,49 +9,55 @@
 </head>
 <body>
     <section id="topbar">
-        <h1 id="titulo">Pokedex</h1>
-
-            <li><a id="btnHome" href="/">Voltar para a página principal</a></li>
-            <li><a id="btnCadastro" href="/cadastro">Cadastrar novo pokemon</a></li>
+        <h1 id="titulo">POKEDEX</h1>
+        
+   
+    
+        <nav id="menu">
+        <ul class="links">
+            <li><a id="btn2" href="/">Voltar para a página inicial</a></li>
+            <li><a id="btn1" href="/cadastro">Cadastrar novo pokemon</a></li>
+        </ul>
+        </nav>
     </section>
 
         <div>
         <h1>
-            <%= pokemon.nome %><span> N° <%=pokemon.number %> </span>
+            <%= pokemon.nome %><span> N° <%= pokemon.numero %> </span>
         </h1>
         </div>
     
 
     <section id="detalhes">
-        <img src="<%= pokemon.imagem %>">
+        <img src="<%= pokemon.imagem %>" alt="">
             <div >
-                <h3>Descrição:</h3>
+                <h2>Descrição: </h2>
             <p>
                 <%= pokemon.descricao %>
             </p>
             <div>
                 <div>
-                    <h3>Altura:</h3>
+                    <h2>Altura:</h2>
                     <p>
                         <%= pokemon.altura %>
                     </p>
-                    <h3>Peso:</h3>
+                    <h2>Peso:</h2>
                     <p>
                         <%= pokemon.peso %>
                     <p>
                 </div>
                 <div>
-                    <h3>Categoria:</h3>
+                    <h2>Categoria:</h2>
                     <p>
                         <%= pokemon.categoria %>
                     </p>
-                    <h3>Habilidade:</h3>
+                    <h2>Habilidade:</h2>
                     <p>
                         <%= pokemon.habilidade %>
                     </p>
                 </div>
             </div>
-            <h3>Tipo:</h3>
+            <h2>Tipo:</h2>
             <p>
                 <%= pokemon.tipo %>
             </p>

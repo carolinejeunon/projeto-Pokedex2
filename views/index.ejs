@@ -22,13 +22,24 @@
 
     <h1>Projeto Pokedex</h1>
 
-    <ul>
-        <% pokedex.forEach(item => { %>
-        <li><img src=<%= item.imagem %>><br>
-        <%= item.nome %> <%= item.tipo %>
-        </li>
-        <% }) %>
-    </ul>
+    <h2>POKEMONS CADASTRADOS NA SUA POKEDEX:</h2>
+    <main class="grid">
+        <article>
+        <section id="pokecard">
+            <% pokedex.forEach((item, index)=> { %>
+                <a href="/detalhes/<%= index %>">
+                    <img src="<%= item.imagem %>" alt="">
+                    <h2>
+                        <%= item.nome %>
+                    </h2>
+                    <h4>
+                        <%= item.tipo %>
+                    </h4>
+                </a>
+                <% }) %>
+        </section>
+        </article>
+    </main>
 
     <footer>Projeto desenvolvido por Caroline Jeunon - Aluna Blue EdTech.</footer>  
 
