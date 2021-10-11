@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="../public/assets/style.css">
     <title>Pokedex</title>
 </head>
 
@@ -20,28 +20,28 @@
         </div>
     </header>
 
-    <h1>Projeto Pokedex</h1>
+    <h1><img src="https://fontmeme.com/permalink/211011/4202968007d33fbb91884aa78242586a.png" alt="fonte-de-pokemon" border="0"></h1>
 
     <h2>POKEMONS CADASTRADOS NA SUA POKEDEX:</h2>
     <main class="grid">
         <article>
+        <% pokedex.forEach((item, index)=> { %>
         <section id="pokecard">
-            <% pokedex.forEach((item, index)=> { %>
                 <a href="/detalhes/<%= index %>">
                     <img src="<%= item.imagem %>" alt="">
-                    <h2>
+                    <h3>
                         <%= item.nome %>
-                    </h2>
+                    </h3>
                     <h4>
                         <%= item.tipo %>
                     </h4>
                 </a>
-                <% }) %>
         </section>
+        <% }) %>
         </article>
-    </main>
+    </main> 
 
-    <footer>Projeto desenvolvido por Caroline Jeunon - Aluna Blue EdTech.</footer>  
+    <footer>Projeto desenvolvido por Caroline Jeunon - Aluna Blue EdTech.</footer> 
 
 </body>
 
