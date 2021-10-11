@@ -7,7 +7,8 @@ let message = "";
 
 app.set("view engine", "ejs");
 
-app.use(express.static(path.join(__dirname, "public"))); //tá falando que vc vai usar a pasta public como padrão
+app.use(express.static(__dirname + '/public')); 
+app.use('/public', express.static('public'));//tá falando que vc vai usar a pasta public como padrão
 app.use(express.urlencoded());
 const pokedex = [{
     number:007, 
